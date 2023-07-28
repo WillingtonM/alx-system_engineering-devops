@@ -2,7 +2,7 @@
 # Displays: content of current directory in a list format
 # 'only displays' part after the "-" dash
 
-for content_file in *; do
-  echo "$content_file" | cut -d '-' -f 2;
+for file in *; do
+  echo "$file" | cut -d '-' -f2;
 done
 
