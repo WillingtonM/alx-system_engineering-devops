@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Displays content of the file '/etc/passwd'
+# Only displays 'username', 'user ID' and 'home directory' path for user.
+
+pass_file="/etc/passwd"
+
+while read -r passwd
+  do
+    echo "$passwd" | cut -d ":" -f1,3,6
+done < "$pass_file"

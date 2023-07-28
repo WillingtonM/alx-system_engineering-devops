@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Bash script: loops from 1 to 10 and:
+# displays: 'bad luck' for 4th loop iteration
+# displays: 'good luck' for 8th loop iteration
+# displays: 'Best School' for other iterations
+
+ind=0
+
+while [ $ind -lt 10 ]
+do
+  if [ $ind -eq 3 ]
+  then
+    echo "bad luck"
+  elif [ $ind -eq 7 ]
+  then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+  ((ind++))
+done

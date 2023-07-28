@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script: displays "Best School" 10times
+
+ind=0
+
+while [ $ind -lt 10 ]
+do
+  echo "Best School"
+  ((ind++))
+done

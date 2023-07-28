@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays "Best School" and displays "Hi" on 9th iteration
+
+ind=0
+
+while [ $ind -lt 10 ]
+do
+  if [ $ind -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  ((ind++))
+done

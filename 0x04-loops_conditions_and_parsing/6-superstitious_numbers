@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Bash script: Displays numbers from 1 to 20 and;
+# displays: 4 and then bad luck from China for 4th loop iteration
+# displays: 9 and then bad luck from Japan for 9th loop iteration
+# displays: 17 and then bad luck from Italy for 17th loop iteration
+
+num=1
+ind=0
+
+while [ $ind -lt 20 ]
+do
+  echo $num
+  case $ind in
+    3)
+       echo "bad luck from China";;
+    8)
+       echo "bad luck from Japan";;
+    16)
+       echo "bad luck from Italy"
+  esac
+  ((ind++))
+  ((num++))
+done
