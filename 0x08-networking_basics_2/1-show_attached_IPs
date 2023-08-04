@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays acive IPv4 addresses.
+# All of them
+
+ifconfig -a | grep "inet addr" | cut -d " " -f12 | cut -d ":" -f2
