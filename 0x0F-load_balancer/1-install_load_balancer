@@ -16,13 +16,10 @@ backend webservers
 
 # Install and configure HAproxy on my server.
 apt-get -y update
-apt-get -y upgrade
 apt-get -y install software-properties-common
 
 add-apt-repository -y ppa:vbernat/haproxy-2.5
 apt-get -y update
-
-# Install HAProxy
 apt-get -y install haproxy
 
 cp -a /etc/haproxy/haproxy.cfg{,.orig}
