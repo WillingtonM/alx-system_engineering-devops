@@ -2,6 +2,7 @@
 # Install and Configures a ufw firewall to block all incoming traffic
 #exclude the following: TCP ports 22, 443 and 80.
 
+
 apt-get install ufw
 sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
 ufw disable
