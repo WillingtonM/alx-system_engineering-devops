@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Exports to-do list information for a particular given employee ID to JSON format."""
+"""Exports to-do list info for particular given employee ID to JSON format."""
 import json
 import requests
 
@@ -14,5 +14,5 @@ if __name__ == "__main__":
                 "completed": tsk.get("completed"),
                 "username": usr.get("username")
             } for tsk in requests.get(api_url + "todos",
-                                    params={"userId": usr.get("id")}).json()]
+                                      params={"userId": usr.get("id")}).json()]
             for usr in api_users}, json_file)
